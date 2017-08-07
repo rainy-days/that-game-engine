@@ -100,7 +100,7 @@ target_link_libraries(${APP_NAME} ${MOBILECORESERVICES})
 target_link_libraries(${APP_NAME} ${CFNETWORK})
 target_link_libraries(${APP_NAME} ${SYSTEMCONFIGURATION})
 
-target_link_libraries(${APP_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/../../../tools/libzmq/lib/libzmq.a)
+target_link_libraries(${APP_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/../../../tools/libzmq/lib/libzmq-ios.a)
 target_include_directories(${APP_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../tools/libzmq/include)
 
 # Link the framework to the app (disabled - the framework is loaded dynamically)
